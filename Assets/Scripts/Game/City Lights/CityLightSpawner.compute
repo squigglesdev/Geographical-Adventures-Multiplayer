@@ -1,0 +1,63 @@
+#pragma kernel SetPositions
+
+#include "Assets/Scripts/Shader Common/Math.hlsl"
+#include "Assets/Scripts/Shader Common/GeoMath.hlsl"
+
+struct CityLight {
+	float3 pointOnSphere;
+	float height;
+	float intensity;
+	float randomT;
+};
+
+RWStructuredBuffer<CityLight> CityLights;
+uint numLights;
+
+Texture2D<float> LightMap;
+Texture2D<float> HeightMap;
+SamplerState linear_clamp_sampler;
+float worldRadius;
+float heightMultiplier;
+
+// Pick random position for each city light.
+// Random positionss are weighted based on the light map.
+[numthreads(32,1,1)]
+void SetPositions (uint3 id : SV_DispatchThreadID)
+{
+	if (id.x >= numLights) { return; }
+
+	uint randomState = id.x;
+	
+	float3 bestPos = 0;
+	float2 bestPosUV = 0;
+	float bestIntensity = 0;
+
+	const int minIterations = 150;
+	const int maxIterations = 1000;
+
+	// Generate n random points on globe and choose the one with greatest brightness as spawn point for this light
+	for (int i = 0; i < maxIterations; i ++) {
+		float3 randomPoint = randomPointOnSphere(randomState);
+		float2 uv = pointToUV(randomPoint);
+
+		float intensity = LightMap.SampleLevel(linear_clamp_sampler, uv, 0);
+		if (intensity > bestIntensity) {
+			bestIntensity = intensity;
+			bestPos = randomPoint;
+			bestPosUV = uv;//
+		}
+
+		// Exit early if a plausible position has been found (or if a very bright point has already been found)
+		if ((bestIntensity > 0 && i >= minIterations) || bestIntensity > 0.98) {
+			break;
+		}
+	}
+
+	if (bestIntensity > 0) {
+		CityLights[id.x].pointOnSphere = bestPos;
+		float height = HeightMap.SampleLevel(linear_clamp_sampler, bestPosUV, 0);
+		CityLights[id.x].height = worldRadius + height * heightMultiplier;
+		CityLights[id.x].intensity = bestIntensity;
+		CityLights[id.x].randomT = randomValue(randomState);
+	}
+}

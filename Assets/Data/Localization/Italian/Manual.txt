@@ -1,0 +1,9 @@
+<color=#FFFFFF>Ciao! In questo piccolo gioco il tuo obiettivo è semplicemente quello di volare in giro per il mondo, raccogliere pacchetti e consegnarli in varie città mentre vai.</color>
+
+Ci sono tre posizioni contrassegnate nella parte superiore dello schermo. In ogni luogo troverai ad attendertiuna mongolfiera con un pacco da ritirare. Vola con il tuo aereo attraverso le mongolfiere per raccogliere i pacchetti.
+
+Una volta che un pacchetto è stato ritirato, la sua posizione nella parte superiore dello schermo cambierà in un indirizzo di consegna. Vola verso quella città (o la tua migliore ipotesi su dove si trova) e lascia il pacco lì. Sarai premiato con del Boost in base a quanto lontano il pacchetto atterra dalla destinazione prevista. Boost ti consente di volare estremamente veloce per un periodo di tempo limitato.
+Puoi ritirare e consegnare i pacchi nell'ordine che preferisci, e puoi anche ritirare più pacchi prima di consegnarne uno qualsiasi (tieni presente che in questo caso, il pulsante di consegna del pacco selezionerà automaticamente il pacco attualmente più vicino alla sua destinazione).
+
+<color=#888888>È possibile trovare un elenco di controlli nel menu delle impostazioni.
+Spero che il gioco ti piacerà!</color>

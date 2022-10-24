@@ -1,0 +1,184 @@
+{
+    "entries": [
+        {
+            "id": "mainMenu.subtitle",
+            "text": "(under construction)"
+        },
+        {
+            "id": "mainMenu.playButton",
+            "text": "Play"
+        },
+        {
+            "id": "mainMenu.multiplayerButton",
+            "text": "Multiplayer"
+        },
+        {
+            "id": "mainMenu.manualButton",
+            "text": "Manual"
+        },
+        {
+            "id": "mainMenu.settingsButton",
+            "text": "Settings"
+        },
+        {
+            "id": "mainMenu.creditsButton",
+            "text": "Credits"
+        },
+        {
+            "id": "mainMenu.quitButton",
+            "text": "Quit"
+        },
+        {
+            "id": "subMenu.closeButton",
+            "text": "Close"
+        },
+        {
+            "id": "settingsMenu.graphicsTab",
+            "text": "Graphics"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguageTab",
+            "text": "Audio / Language"
+        },
+        {
+            "id": "settingsMenu.controlsTab",
+            "text": "Controls"
+        },
+        {
+            "id": "settingsMenu.graphics.aspectRatio",
+            "text": "Aspect Ratio"
+        },
+        {
+            "id": "settingsMenu.graphics.resolution",
+            "text": "Resolution"
+        },
+        {
+            "id": "settingsMenu.graphics.fullScreen",
+            "text": "Full Screen"
+        },
+        {
+            "id": "settingsMenu.graphics.vSync",
+            "text": "VSync"
+        },
+        {
+            "id": "settingsMenu.graphics.terrainQuality",
+            "text": "Terrain Quality"
+        },
+        {
+            "id": "settingsMenu.graphics.shadowQuality",
+            "text": "Shadow Quality"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.language",
+            "text": "Language"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.translationNote",
+            "text": "Please note that these translations are a work-in-progress community effort."
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.masterVolume",
+            "text": "Master Volume"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.musicVolume",
+            "text": "Music Volume"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.sfxVolume",
+            "text": "SFX Volume"
+        },
+        {
+            "id": "settingsMenu.controls.resetButton",
+            "text": "Reset"
+        },
+        {
+            "id": "settingsMenu.controls.playerControls",
+            "text": "Player Controls"
+        },
+        {
+            "id": "settingsMenu.controls.turn",
+            "text": "Turn"
+        },
+        {
+            "id": "settingsMenu.controls.elevation",
+            "text": "Altitude"
+        },
+        {
+            "id": "settingsMenu.controls.speed",
+            "text": "Speed"
+        },
+        {
+            "id": "settingsMenu.controls.boost",
+            "text": "Boost"
+        },
+        {
+            "id": "settingsMenu.controls.dropPackage",
+            "text": "Drop Package"
+        },
+        {
+            "id": "settingsMenu.controls.cameraControls",
+            "text": "Camera Controls"
+        },
+        {
+            "id": "settingsMenu.controls.forwardView",
+            "text": "Forward View"
+        },
+        {
+            "id": "settingsMenu.controls.behindView",
+            "text": "Behind View"
+        },
+        {
+            "id": "settingsMenu.controls.topView",
+            "text": "Top View"
+        },
+        {
+            "id": "settingsMenu.controls.extraControls",
+            "text": "Extra Controls"
+        },
+        {
+            "id": "settingsMenu.controls.makeDayTime",
+            "text": "Make Day-time"
+        },
+        {
+            "id": "settingsMenu.controls.makeNightTime",
+            "text": "Make Night-time"
+        },
+        {
+            "id": "settingsMenu.controls.uiControls",
+            "text": "UI Controls"
+        },
+        {
+            "id": "settingsMenu.controls.toggleMap",
+            "text": "Map"
+        },
+        {
+            "id": "settingsMenu.controls.togglePause",
+            "text": "Pause"
+        },
+        {
+            "id": "settingsMenu.applyButton",
+            "text": "Apply"
+        },
+        {
+            "id": "settingsMenu.exitNote",
+            "text": "Note: closing without applying will revert your changes."
+        },
+        {
+            "id": "pauseMenu.pausedTitle",
+            "text": "PAUSED"
+        },
+        {
+            "id": "pauseMenu.resumeButton",
+            "text": "Resume"
+        },
+        {
+            "id": "pauseMenu.statsButton",
+            "text": "Stats"
+        },
+        {
+            "id": "pauseMenu.quitButton",
+            "text": "Quit"
+        }
+    ]
+}

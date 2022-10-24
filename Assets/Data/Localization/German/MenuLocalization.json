@@ -1,0 +1,180 @@
+{
+    "entries": [
+        {
+            "id": "mainMenu.subtitle",
+            "text": "(Entwicklungsversion)"
+        },
+        {
+            "id": "mainMenu.playButton",
+            "text": "Spielen"
+        },
+        {
+            "id": "mainMenu.manualButton",
+            "text": "Anleitungen"
+        },
+        {
+            "id": "mainMenu.settingsButton",
+            "text": "Einstellungen"
+        },
+        {
+            "id": "mainMenu.creditsButton",
+            "text": "Credits"
+        },
+        {
+            "id": "mainMenu.quitButton",
+            "text": "Spiel verlassen"
+        },
+        {
+            "id": "subMenu.closeButton",
+            "text": "Schliessen"
+        },
+        {
+            "id": "settingsMenu.graphicsTab",
+            "text": "Grafik"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguageTab",
+            "text": "Audio / Sprache"
+        },
+        {
+            "id": "settingsMenu.controlsTab",
+            "text": "Steuerung"
+        },
+        {
+            "id": "settingsMenu.graphics.aspectRatio",
+            "text": "Seitenverhältnisse"
+        },
+        {
+            "id": "settingsMenu.graphics.resolution",
+            "text": "Auflösung"
+        },
+        {
+            "id": "settingsMenu.graphics.fullScreen",
+            "text": "Vollbild"
+        },
+        {
+            "id": "settingsMenu.graphics.vSync",
+            "text": "VSync"
+        },
+        {
+            "id": "settingsMenu.graphics.terrainQuality",
+            "text": "Landschaftsqualität"
+        },
+        {
+            "id": "settingsMenu.graphics.shadowQuality",
+            "text": "Schattenqualität"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.language",
+            "text": "Sprache"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.translationNote",
+            "text": "Bei diesen Übersetzungen handelt es sich um eine Gemeinschaftsarbeit, die noch nicht abgeschlossen ist."
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.masterVolume",
+            "text": "Gesamtlautstärke"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.musicVolume",
+            "text": "Musiklautstärke"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.sfxVolume",
+            "text": "SFX Lautstärke"
+        },
+        {
+            "id": "settingsMenu.controls.resetButton",
+            "text": "Zurücksetzen"
+        },
+        {
+            "id": "settingsMenu.controls.playerControls",
+            "text": "Spieler Steuerungen"
+        },
+        {
+            "id": "settingsMenu.controls.turn",
+            "text": "Drehen"
+        },
+        {
+            "id": "settingsMenu.controls.elevation",
+            "text": "Höhe"
+        },
+        {
+            "id": "settingsMenu.controls.speed",
+            "text": "Geschwindigkeit"
+        },
+        {
+            "id": "settingsMenu.controls.boost",
+            "text": "Boost"
+        },
+        {
+            "id": "settingsMenu.controls.dropPackage",
+            "text": "Paket liefern"
+        },
+        {
+            "id": "settingsMenu.controls.cameraControls",
+            "text": "Kamera Steuerungen"
+        },
+        {
+            "id": "settingsMenu.controls.forwardView",
+            "text": "Vorwärtsansicht"
+        },
+        {
+            "id": "settingsMenu.controls.behindView",
+            "text": "Ansicht von Hinten"
+        },
+        {
+            "id": "settingsMenu.controls.topView",
+            "text": "Ansicht von Oben"
+        },
+        {
+            "id": "settingsMenu.controls.extraControls",
+            "text": "Weitere Steuerungen"
+        },
+        {
+            "id": "settingsMenu.controls.makeDayTime",
+            "text": "Auf Tageszeit wechseln"
+        },
+        {
+            "id": "settingsMenu.controls.makeNightTime",
+            "text": "Auf Nachtzeit wechseln"
+        },
+        {
+            "id": "settingsMenu.controls.uiControls",
+            "text": "UI Steuerungen"
+        },
+        {
+            "id": "settingsMenu.controls.toggleMap",
+            "text": "Karte"
+        },
+        {
+            "id": "settingsMenu.controls.togglePause",
+            "text": "Pausieren"
+        },
+        {
+            "id": "settingsMenu.applyButton",
+            "text": "Speichern"
+        },
+        {
+            "id": "settingsMenu.exitNote",
+            "text": "Beachte: Schließen ohne Speichern verwirft deine Änderungen."
+        },
+        {
+            "id": "pauseMenu.pausedTitle",
+            "text": "PAUSIERT"
+        },
+        {
+            "id": "pauseMenu.resumeButton",
+            "text": "Fortsetzen"
+        },
+        {
+            "id": "pauseMenu.statsButton",
+            "text": "Statistiken"
+        },
+        {
+            "id": "pauseMenu.quitButton",
+            "text": "Zurück"
+        }
+    ]
+}

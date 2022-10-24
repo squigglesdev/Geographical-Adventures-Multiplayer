@@ -1,0 +1,180 @@
+{
+    "entries": [
+        {
+            "id": "mainMenu.subtitle",
+            "text": "(em construção)"
+        },
+        {
+            "id": "mainMenu.playButton",
+            "text": "Jogar"
+        },
+        {
+            "id": "mainMenu.manualButton",
+            "text": "Manual"
+        },
+        {
+            "id": "mainMenu.settingsButton",
+            "text": "Configurações"
+        },
+        {
+            "id": "mainMenu.creditsButton",
+            "text": "Créditos"
+        },
+        {
+            "id": "mainMenu.quitButton",
+            "text": "Sair"
+        },
+        {
+            "id": "subMenu.closeButton",
+            "text": "Fechar"
+        },
+        {
+            "id": "settingsMenu.graphicsTab",
+            "text": "Gráficos"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguageTab",
+            "text": "Áudio / Linguagem"
+        },
+        {
+            "id": "settingsMenu.controlsTab",
+            "text": "Controles"
+        },
+        {
+            "id": "settingsMenu.graphics.aspectRatio",
+            "text": "Proporção da Tela"
+        },
+        {
+            "id": "settingsMenu.graphics.resolution",
+            "text": "Resolução"
+        },
+        {
+            "id": "settingsMenu.graphics.fullScreen",
+            "text": "Tela Cheia"
+        },
+        {
+            "id": "settingsMenu.graphics.vSync",
+            "text": "VSync"
+        },
+        {
+            "id": "settingsMenu.graphics.terrainQuality",
+            "text": "Qualidade do Terreno"
+        },
+        {
+            "id": "settingsMenu.graphics.shadowQuality",
+            "text": "Qualidade das Sombras"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.language",
+            "text": "Linguagem"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.translationNote",
+            "text": "Por favor note que estas traduções são um esforço da comunidade e estão em progresso."
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.masterVolume",
+            "text": "Volume Principal"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.musicVolume",
+            "text": "Volume da Música"
+        },
+        {
+            "id": "settingsMenu.audioAndLanguage.sfxVolume",
+            "text": "Volume dos Efeitos"
+        },
+        {
+            "id": "settingsMenu.controls.resetButton",
+            "text": "Redefinir"
+        },
+        {
+            "id": "settingsMenu.controls.playerControls",
+            "text": "Controles do jogador"
+        },
+        {
+            "id": "settingsMenu.controls.turn",
+            "text": "Virar"
+        },
+        {
+            "id": "settingsMenu.controls.elevation",
+            "text": "Elevação"
+        },
+        {
+            "id": "settingsMenu.controls.speed",
+            "text": "Velocidade"
+        },
+        {
+            "id": "settingsMenu.controls.boost",
+            "text": "Turbo"
+        },
+        {
+            "id": "settingsMenu.controls.dropPackage",
+            "text": "Largar pacote"
+        },
+        {
+            "id": "settingsMenu.controls.cameraControls",
+            "text": "Controles da câmera"
+        },
+        {
+            "id": "settingsMenu.controls.forwardView",
+            "text": "Visão frontal"
+        },
+        {
+            "id": "settingsMenu.controls.behindView",
+            "text": "Visão traseira"
+        },
+        {
+            "id": "settingsMenu.controls.topView",
+            "text": "Vista do topo"
+        },
+        {
+            "id": "settingsMenu.controls.extraControls",
+            "text": "Controles Extra"
+        },
+        {
+            "id": "settingsMenu.controls.makeDayTime",
+            "text": "Deixar de dia"
+        },
+        {
+            "id": "settingsMenu.controls.makeNightTime",
+            "text": "Deixar de noite"
+        },
+        {
+            "id": "settingsMenu.controls.uiControls",
+            "text": "Controles da Interface do Usuário"
+        },
+        {
+            "id": "settingsMenu.controls.toggleMap",
+            "text": "Mapa"
+        },
+        {
+            "id": "settingsMenu.controls.togglePause",
+            "text": "Pausar"
+        },
+        {
+            "id": "settingsMenu.applyButton",
+            "text": "Aplicar"
+        },
+        {
+            "id": "settingsMenu.exitNote",
+            "text": "Note: fechar sem aplicar vai reverter as suas mudanças."
+        },
+        {
+            "id": "pauseMenu.pausedTitle",
+            "text": "PAUSADO"
+        },
+        {
+            "id": "pauseMenu.resumeButton",
+            "text": "Voltar"
+        },
+        {
+            "id": "pauseMenu.statsButton",
+            "text": "Estatísticas"
+        },
+        {
+            "id": "pauseMenu.quitButton",
+            "text": "Sair"
+        }
+    ]
+}
