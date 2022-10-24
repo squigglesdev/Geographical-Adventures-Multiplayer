@@ -1,6 +1,6 @@
 # Geographical Adventures Multiplayer
 A little work-in-progress geography game about delivering packages to different countries around the world. </br>
-Battle it out with friends and try to diliver the most packages, or enjoy a relaxing fly around our beutiful planet. <br/>
+Battle it out with friends and try to deliver the most packages, or enjoy a relaxing fly around our beutiful planet. <br/>
 Made in the Unity game engine using Photon PUN networking.
 
 
@@ -13,7 +13,7 @@ Made in the Unity game engine using Photon PUN networking.
 
 
 # License
-This work is licensed under a
+As is the original, this work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
