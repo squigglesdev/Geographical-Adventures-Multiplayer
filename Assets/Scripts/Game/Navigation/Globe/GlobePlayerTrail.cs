@@ -15,7 +15,6 @@ public class GlobePlayerTrail : MonoBehaviour
 	public float dstBetweenTrailPoints;
 	public MeshRenderer trailPointPrefab;
 	public float trailPointSize = 0.1f;
-
 	GameObject trailHolder;
 
 	void Update()
