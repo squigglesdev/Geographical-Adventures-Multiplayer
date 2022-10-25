@@ -25,9 +25,7 @@ namespace GeoGame.Quest
 		List<Quest> questHistory;
 
 
-
-
-		public Quest CreateQuest()
+		public Quest CreateQuest(Player player)
 		{
 			Init();
 			Quest quest = new Quest();

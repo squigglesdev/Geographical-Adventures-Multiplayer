@@ -82,6 +82,13 @@ namespace GeoGame.Quest
 
 			GameController.Instance.onGameStarted -= OnGameStarted;
 			GameController.Instance.onGameStarted += OnGameStarted;
+			Debug.Log("Quest creation started");
+			for (int i = 0; i < activeQuests.Length; i++)
+			{
+				SetNewActiveQuest(i);
+			}
+
+			questUI.AnimateFirstSet();
 
 
 
@@ -89,6 +96,7 @@ namespace GeoGame.Quest
 
 		void OnGameStarted()
 		{
+			Debug.Log("Quest creation started");
 			for (int i = 0; i < activeQuests.Length; i++)
 			{
 				SetNewActiveQuest(i);
@@ -283,7 +291,7 @@ namespace GeoGame.Quest
 		void SetNewActiveQuest(int index, bool animate = false)
 		{
 			// Create quest and setup UI
-			Quest quest = questCreator.CreateQuest();
+			Quest quest = questCreator.CreateQuest(player);
 			activeQuests[index] = quest;
 			questUI.SetTarget(index, quest.pickupLocation, isPickup: true, animate: animate);
 
