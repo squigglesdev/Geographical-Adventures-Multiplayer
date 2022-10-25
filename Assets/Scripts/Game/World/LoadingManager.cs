@@ -27,7 +27,7 @@ public class LoadingManager : MonoBehaviour
 	public GameObject[] deactivateWhileLoading;
 
 	// Called before all other scripts (defined in script execution order settings)
-	void Awake()
+	void Start()
 	{
 		Load();
 
@@ -57,6 +57,7 @@ public class LoadingManager : MonoBehaviour
 
 	void Load()
 	{
+		player = GameObject.FindWithTag("Plane").GetComponent<Player>();
 		var loadTimer = System.Diagnostics.Stopwatch.StartNew();
 		OnLoadStart();
 		LoadTask[] tasks = GetTasks();

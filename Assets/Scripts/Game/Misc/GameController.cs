@@ -36,6 +36,7 @@ public class GameController : MonoBehaviour
 	{
 		stateStack = new Stack<GameState>();
 		stateStack.Push(startupState);
+		Debug.LogWarning(stateStack);
 	}
 
 	void Start()

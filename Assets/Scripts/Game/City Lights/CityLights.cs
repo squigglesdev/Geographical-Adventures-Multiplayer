@@ -18,16 +18,19 @@ public class CityLights : MonoBehaviour
 	public float sizeMax = 1;
 	public float turnOnTimeVariation;
 	public float turnOnTime;
+	public RenderTexture heightMap;
 
 	[Header("Debug")]
 	[SerializeField, Disabled] Mesh mesh;
 
-	CityLightRenderer[] renderers;
+	public CityLightRenderer[] renderers;
 
 	Transform sunLight;
 
 	CityLightGroup groups;
 	ComputeBuffer cityLightBuffer;
+
+
 
 
 	public void Init(RenderTexture heightMap, Light sunLight)
@@ -44,7 +47,9 @@ public class CityLights : MonoBehaviour
 		}
 
 		cityLightBuffer = ComputeHelper.CreateStructuredBuffer(lightsList);
+		Debug.Log("About to set renderers");
 		renderers = new CityLightRenderer[groups.Length];
+		Debug.Log(renderers);
 
 		int lightCountCumul = 0;
 		for (int i = 0; i < groups.Length; i++)
@@ -58,8 +63,6 @@ public class CityLights : MonoBehaviour
 			AssignConstantShaderData(renderers[i]);
 		}
 	}
-
-
 
 	void Update()
 	{

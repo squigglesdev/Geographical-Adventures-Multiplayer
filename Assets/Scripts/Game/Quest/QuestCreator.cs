@@ -29,7 +29,6 @@ namespace GeoGame.Quest
 
 		public Quest CreateQuest()
 		{
-			player = GameObject.FindWithTag("Plane").GetComponent<Player>();
 			Init();
 			Quest quest = new Quest();
 

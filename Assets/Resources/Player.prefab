@@ -1426,6 +1426,7 @@ MonoBehaviour:
   maxPitchAngle: 40
   changeElevationSpeed: 1
   turnSmoothTime: 0.25
+  version: {fileID: 0}
   model: {fileID: 77413297758391665}
   navigationLights:
   - {fileID: 77413296310557483}
