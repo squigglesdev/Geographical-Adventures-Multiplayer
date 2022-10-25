@@ -1,8 +1,10 @@
 # Geographical Adventures Multiplayer
-A little work-in-progress geography game about delivering packages to different countries around the world. </br>
-Battle it out with friends and try to deliver the most packages, or enjoy a relaxing fly around our beutiful planet. <br/>
+A little geography game about delivering packages to different countries around the world. </br>
 Made in the Unity game engine using Photon PUN networking.
 
+# Two game modes
+Multiplayer: Battle it out with friends and try to deliver the most packages! <br/>
+Singleplayer: Enjoy a relaxing fly around our beautiful planet delivering packages.  </br>
 
 ![Image](https://raw.githubusercontent.com/SebLague/Images/master/Geographical%20Adventures.jpg)
 ![Image](https://raw.githubusercontent.com/SebLague/Images/master/Geographical%20Adventures%202.jpg)
