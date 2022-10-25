@@ -37,6 +37,9 @@ public class Player : MonoBehaviour
 	public float changeElevationSpeed;
 	public float turnSmoothTime;
 
+	[Header("Game Version")]
+	public Version version;
+
 	[Header("Graphics")]
 	public Transform model;
 	public Transform[] navigationLights;
@@ -98,6 +101,7 @@ public class Player : MonoBehaviour
 
 	void Awake()
 	{
+		version = GameObject.FindWithTag("version").GetComponent<Version>();
 		view = GetComponent<PhotonView>();
 		worldLookup = GameObject.FindWithTag("lookup").GetComponent<WorldLookup>();
 		sunLight = GameObject.FindWithTag("Sun").transform;
@@ -125,18 +129,33 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		if (view.IsMine)
+		if (version.singlePlayer)
 		{
 			if (GameController.IsState(GameState.Playing))
-		{
-			HandleInput();
-			HandleMovement();
-			UpdatePositionHistory();
-			UpdateBoostTimer();
-		}
+			{
+				HandleInput();
+				HandleMovement();
+				UpdatePositionHistory();
+				UpdateBoostTimer();
+			}
+			
 
-		UpdateGraphics();
-		UpdateDevMode();
+			UpdateGraphics();
+			UpdateDevMode();
+		}
+		else if (view.IsMine)
+		{
+			if (GameController.IsState(GameState.Playing))
+			{
+				HandleInput();
+				HandleMovement();
+				UpdatePositionHistory();
+				UpdateBoostTimer();
+			}
+			
+
+			UpdateGraphics();
+			UpdateDevMode();
 		}
 
 	}
