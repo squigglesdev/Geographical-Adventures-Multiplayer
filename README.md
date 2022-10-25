@@ -4,10 +4,6 @@ Made in the Unity game engine using Photon PUN networking.
 
 ![Image](https://raw.githubusercontent.com/SebLague/Images/master/Geographical%20Adventures.jpg)
 ![Image](https://raw.githubusercontent.com/SebLague/Images/master/Geographical%20Adventures%202.jpg)
-# Seb Lague's Singleplayer Development Videos
-[Episode 01: I Tried Creating a Game Using Real-World Geographic Data](https://youtu.be/sLqXFF8mlEU) <br/>
-[Episode 02: Trying to Improve My Geography Game with More Real-World Data](https://youtu.be/UXD97l7ZT0w) <br/>
-[Episode 03: Polishing and Releasing My Little Geography Game](https://www.youtube.com/watch?v=pNp4ug5F6To)
 
 # Two game modes
 **Multiplayer**<br/>
@@ -15,6 +11,11 @@ Battle it out with friends and try to deliver the most packages! <br/>
 
 **Singleplayer**<br/>
 Enjoy a relaxing fly around our beautiful planet delivering packages.  <br/>
+
+# Seb Lague's Singleplayer Development Videos
+[Episode 01: I Tried Creating a Game Using Real-World Geographic Data](https://youtu.be/sLqXFF8mlEU) <br/>
+[Episode 02: Trying to Improve My Geography Game with More Real-World Data](https://youtu.be/UXD97l7ZT0w) <br/>
+[Episode 03: Polishing and Releasing My Little Geography Game](https://www.youtube.com/watch?v=pNp4ug5F6To)
 
 # License
 As is the original, this work is licensed under a
