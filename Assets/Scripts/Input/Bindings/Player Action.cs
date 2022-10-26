@@ -37,6 +37,15 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Shoot Missile"",
+                    ""type"": ""Button"",
+                    ""id"": ""faeec6d4-b577-4aaa-9711-bd046664eb6c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Movement"",
                     ""type"": ""Value"",
                     ""id"": ""8cee259e-1505-4fab-944c-c26d572003d1"",
@@ -262,7 +271,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""8184bb45-b570-413e-9f77-98329c52e50c"",
-                    ""path"": ""<Keyboard>/backspace"",
+                    ""path"": ""<Keyboard>/f1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -273,11 +282,22 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""5b770e63-e97c-42ee-8269-0c85029d7b43"",
-                    ""path"": ""<Keyboard>/enter"",
+                    ""path"": ""<Keyboard>/f2"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
                     ""action"": ""Make Nighttime"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8fd51cdb-36f9-4918-a93a-d40c5ea7dd22"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Shoot Missile"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -619,6 +639,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         // Player Controls
         m_PlayerControls = asset.FindActionMap("Player Controls", throwIfNotFound: true);
         m_PlayerControls_DropPackage = m_PlayerControls.FindAction("Drop Package", throwIfNotFound: true);
+        m_PlayerControls_ShootMissile = m_PlayerControls.FindAction("Shoot Missile", throwIfNotFound: true);
         m_PlayerControls_Movement = m_PlayerControls.FindAction("Movement", throwIfNotFound: true);
         m_PlayerControls_Speed = m_PlayerControls.FindAction("Speed", throwIfNotFound: true);
         m_PlayerControls_Boost = m_PlayerControls.FindAction("Boost", throwIfNotFound: true);
@@ -697,6 +718,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_PlayerControls;
     private IPlayerControlsActions m_PlayerControlsActionsCallbackInterface;
     private readonly InputAction m_PlayerControls_DropPackage;
+    private readonly InputAction m_PlayerControls_ShootMissile;
     private readonly InputAction m_PlayerControls_Movement;
     private readonly InputAction m_PlayerControls_Speed;
     private readonly InputAction m_PlayerControls_Boost;
@@ -707,6 +729,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         private @PlayerAction m_Wrapper;
         public PlayerControlsActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @DropPackage => m_Wrapper.m_PlayerControls_DropPackage;
+        public InputAction @ShootMissile => m_Wrapper.m_PlayerControls_ShootMissile;
         public InputAction @Movement => m_Wrapper.m_PlayerControls_Movement;
         public InputAction @Speed => m_Wrapper.m_PlayerControls_Speed;
         public InputAction @Boost => m_Wrapper.m_PlayerControls_Boost;
@@ -724,6 +747,9 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 @DropPackage.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnDropPackage;
                 @DropPackage.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnDropPackage;
                 @DropPackage.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnDropPackage;
+                @ShootMissile.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnShootMissile;
+                @ShootMissile.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnShootMissile;
+                @ShootMissile.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnShootMissile;
                 @Movement.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMovement;
@@ -746,6 +772,9 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 @DropPackage.started += instance.OnDropPackage;
                 @DropPackage.performed += instance.OnDropPackage;
                 @DropPackage.canceled += instance.OnDropPackage;
+                @ShootMissile.started += instance.OnShootMissile;
+                @ShootMissile.performed += instance.OnShootMissile;
+                @ShootMissile.canceled += instance.OnShootMissile;
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
@@ -917,6 +946,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
     public interface IPlayerControlsActions
     {
         void OnDropPackage(InputAction.CallbackContext context);
+        void OnShootMissile(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
         void OnSpeed(InputAction.CallbackContext context);
         void OnBoost(InputAction.CallbackContext context);

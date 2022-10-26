@@ -8,6 +8,7 @@ public class PlayerInputHandler : MonoBehaviour
 
 	public Player player;
 	public GeoGame.Quest.QuestSystem questSystem;
+	public MissileSystem missileSystem;
 	public GameCamera gameCamera;
 	public UIManager uIManager;
 	public SolarSystem.SolarSystemManager solarSystemManager;
@@ -17,6 +18,8 @@ public class PlayerInputHandler : MonoBehaviour
 	void Start()
 	{
 		player = GameObject.FindWithTag("Plane").GetComponent<Player>();
+		missileSystem = GameObject.FindWithTag("Plane").GetComponent<MissileSystem>();
+
 		playerActions = RebindManager.Instance.activePlayerActions;
 
 		playerActions.PlayerControls.Enable();
@@ -48,6 +51,10 @@ public class PlayerInputHandler : MonoBehaviour
 		if (playerActions.PlayerControls.DropPackage.WasPressedThisFrame())
 		{
 			questSystem.TryDropPackage();
+		}
+		if (playerActions.PlayerControls.ShootMissile.WasPressedThisFrame())
+		{
+			missileSystem.ShootMissile();
 		}
 	}
 

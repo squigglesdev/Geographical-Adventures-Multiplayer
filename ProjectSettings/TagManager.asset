@@ -9,6 +9,8 @@ TagManager:
   - Plane
   - lookup
   - version
+  - baloon
+  - target
   layers:
   - Default
   - TransparentFX

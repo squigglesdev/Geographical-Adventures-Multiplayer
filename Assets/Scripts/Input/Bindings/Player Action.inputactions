@@ -15,6 +15,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Shoot Missile",
+                    "type": "Button",
+                    "id": "faeec6d4-b577-4aaa-9711-bd046664eb6c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Movement",
                     "type": "Value",
                     "id": "8cee259e-1505-4fab-944c-c26d572003d1",
@@ -240,7 +249,7 @@
                 {
                     "name": "",
                     "id": "8184bb45-b570-413e-9f77-98329c52e50c",
-                    "path": "<Keyboard>/backspace",
+                    "path": "<Keyboard>/f1",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -251,11 +260,22 @@
                 {
                     "name": "",
                     "id": "5b770e63-e97c-42ee-8269-0c85029d7b43",
-                    "path": "<Keyboard>/enter",
+                    "path": "<Keyboard>/f2",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Make Nighttime",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8fd51cdb-36f9-4918-a93a-d40c5ea7dd22",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shoot Missile",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

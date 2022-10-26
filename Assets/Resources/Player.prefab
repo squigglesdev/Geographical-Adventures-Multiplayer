@@ -1359,10 +1359,12 @@ GameObject:
   m_Component:
   - component: {fileID: 77413297159341666}
   - component: {fileID: 77413297159341667}
+  - component: {fileID: 6326073756321720528}
   - component: {fileID: 77413297159341665}
   - component: {fileID: 144373650490615262}
   - component: {fileID: 594149452244658036}
   - component: {fileID: 5955435876868466019}
+  - component: {fileID: 7851789854830373741}
   m_Layer: 0
   m_Name: Player
   m_TagString: Plane
@@ -1385,6 +1387,7 @@ Transform:
   - {fileID: 77413296929018498}
   - {fileID: 77413297758391665}
   - {fileID: 77413296349663913}
+  - {fileID: 8780685393162582489}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1445,6 +1448,21 @@ MonoBehaviour:
   currentSpeed: 6.15
   debug_TestInitPos: 0
   debug_lockMovement: 0
+--- !u!114 &6326073756321720528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77413297159341676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38618874de5420a4bbb2a6b71178a47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialMissileCount: 5
+  missilePrefab: {fileID: 6114595976394733456, guid: 6a63fdac04349954ea8c518631820269, type: 3}
+  missileShootPoint: {fileID: 8780685393162582489}
 --- !u!114 &77413297159341665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,6 +1552,19 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!65 &7851789854830373741
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77413297159341676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &77413297176158637
 GameObject:
   m_ObjectHideFlags: 0
@@ -3449,3 +3480,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1543681429403919397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8780685393162582489}
+  m_Layer: 0
+  m_Name: Missile Shoot Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8780685393162582489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543681429403919397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14, y: -0, z: 0.164}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 77413297159341666}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

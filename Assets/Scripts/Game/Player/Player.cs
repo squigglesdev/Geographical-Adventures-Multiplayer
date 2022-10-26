@@ -145,6 +145,10 @@ public class Player : MonoBehaviour
 		}
 		else if (view.IsMine)
 		{
+			foreach (Photon.Realtime.Player client in PhotonNetwork.PlayerListOthers)
+			{
+				Debug.Log(client);
+			}
 			if (GameController.IsState(GameState.Playing))
 			{
 				HandleInput();
@@ -159,7 +163,6 @@ public class Player : MonoBehaviour
 		}
 
 	}
-
 	public void UpdateMovementInput(Vector2 moveInput, float accelerateDir, bool boosting)
 	{
 		// Turning
