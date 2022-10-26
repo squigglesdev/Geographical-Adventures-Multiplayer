@@ -10915,7 +10915,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3681474418486664440, guid: 8bc70cfae40b98446a19111d73fcbae9, type: 2}
-  m_audioClip: {fileID: 8300000, guid: a1e811c6389771c42aab3f05a5918043, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.646
   m_Pitch: 1
@@ -15076,7 +15076,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389253764}
-  m_Mesh: {fileID: 1725775167}
+  m_Mesh: {fileID: 1731250679}
 --- !u!1 &1404288725
 GameObject:
   m_ObjectHideFlags: 0
@@ -15639,14 +15639,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracks:
-  - {fileID: 8300000, guid: 3b45288affb90bf419350c1ab10050a9, type: 3}
-  - {fileID: 8300000, guid: 483718f9683492943b65b373567a1033, type: 3}
-  - {fileID: 8300000, guid: c7a0c88348ae65940b8a6c4bb6321abd, type: 3}
-  - {fileID: 8300000, guid: ca994e57596a5a84fb52f6a205e483ee, type: 3}
-  - {fileID: 8300000, guid: 57e9026cbc825694782f8ce79092c1e6, type: 3}
-  - {fileID: 8300000, guid: 1c0847150ca316f4584868d02bd49c82, type: 3}
+  - {fileID: 8300000, guid: e40d52e08933fe5438a49cbd8eb963f6, type: 3}
+  - {fileID: 8300000, guid: e3da0756be2b9e545a62d113930a55f0, type: 3}
+  - {fileID: 8300000, guid: 3f3808f352579bd468e71c198e103299, type: 3}
+  - {fileID: 8300000, guid: afcd594b48ae0b84ca00b1b70ce71982, type: 3}
   source: {fileID: 963826806}
-  shuffleTracksOnStart: 0
+  shuffleTracksOnStart: 1
 --- !u!1 &1466841032
 GameObject:
   m_ObjectHideFlags: 0
@@ -19179,7 +19177,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721362571}
   m_CullTransparentMesh: 1
---- !u!43 &1725775167
+--- !u!43 &1731250679
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

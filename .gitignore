@@ -74,3 +74,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+*.mp3
+Assets/Audio/Music/Autumn in Paris.mp3.meta
+Assets/Audio/Music/It Will Come Back.mp3.meta
+Assets/Audio/Music/Over the Canyon.mp3.meta
+Assets/Audio/Music/Passion.mp3.meta
