@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class Missile : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class Missile : MonoBehaviour
     {
         if (fuelVolume > 0)
         {
-            target = GameObject.FindWithTag("target").transform;
+            target = GameObject.FindWithTag("Plane").transform;
             var step = initialVelocity * Time.deltaTime;
             transform.LookAt(target);
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
@@ -30,16 +31,16 @@ public class Missile : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+            PhotonNetwork.Destroy(this.gameObject);
         }
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "target")
+        if (other.tag == "target")
             {
                 Debug.Log("hit");
-                Destroy(collision.gameObject);
-                Destroy(this.gameObject);
+                PhotonNetwork.Destroy(other.gameObject);
+                PhotonNetwork.Destroy(this.gameObject);
             }
     }
 }

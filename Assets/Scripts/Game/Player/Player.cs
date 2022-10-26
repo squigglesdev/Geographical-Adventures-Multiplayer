@@ -145,10 +145,7 @@ public class Player : MonoBehaviour
 		}
 		else if (view.IsMine)
 		{
-			foreach (Photon.Realtime.Player client in PhotonNetwork.PlayerListOthers)
-			{
-				Debug.Log(client);
-			}
+			gameObject.tag = "myPlane";
 			if (GameController.IsState(GameState.Playing))
 			{
 				HandleInput();
