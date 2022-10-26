@@ -88,7 +88,7 @@ namespace GeoGame.Quest
 				SetNewActiveQuest(i);
 			}
 
-			questUI.AnimateFirstSet();
+			//questUI.AnimateFirstSet();
 
 
 
@@ -96,11 +96,11 @@ namespace GeoGame.Quest
 
 		void OnGameStarted()
 		{
-			Debug.Log("Quest creation started");
+			/*Debug.Log("Quest creation started");
 			for (int i = 0; i < activeQuests.Length; i++)
 			{
 				SetNewActiveQuest(i);
-			}
+			}*/
 
 			questUI.AnimateFirstSet();
 		}
