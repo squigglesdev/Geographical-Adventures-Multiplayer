@@ -11,6 +11,7 @@ TagManager:
   - version
   - baloon
   - target
+  - myPlane
   layers:
   - Default
   - TransparentFX
